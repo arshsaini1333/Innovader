@@ -1,0 +1,121 @@
+/* Black background section */
+
+.dark-section {
+    height: auto;
+    background-color: #0e0e0e;
+    padding: 60px 20px;
+    color: white;
+    text-align: center;
+    padding-bottom: 8rem;
+}
+
+.dark-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+
+/* Container for the stepped layout */
+
+.dark-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+    position: relative;
+}
+
+
+/* Card design */
+
+.dark-card {
+    width: 28%;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    padding: 24px;
+    text-align: left;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.dark-card:hover {
+    transform: translateY(-5px);
+}
+
+.dark-icon {
+    background-color: #262626;
+    border-radius: 50%;
+    padding: 12px;
+    display: inline-flex;
+    margin-bottom: 16px;
+}
+
+.icon {
+    color: #7f5af0;
+}
+
+.dark-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.dark-card p {
+    font-size: 0.95rem;
+    color: #ccc;
+    margin-bottom: 16px;
+}
+
+.dark-card ul {
+    padding-left: 0;
+    list-style: none;
+    color: #8fff8f;
+    margin-bottom: 16px;
+}
+
+.dark-card ul li {
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+.dark-card a {
+    color: #7f5af0;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.dark-card a:hover {
+    text-decoration: underline;
+}
+
+
+/* Stair step effect */
+
+.stair-0 {
+    top: 0;
+}
+
+.stair-1 {
+    top: 30px;
+}
+
+.stair-2 {
+    top: 60px;
+}
+
+
+/* Responsive behavior */
+
+@media (max-width: 768px) {
+    .dark-cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .stair-0,
+    .stair-1,
+    .stair-2 {
+        top: 0;
+    }
+}

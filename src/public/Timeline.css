@@ -1,0 +1,133 @@
+.timeline-wrapper {
+    background-color: transparent;
+    padding: 50px 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.timeline-line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    background: #ffffff33;
+    z-index: 0;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.timeline-progress {
+    background-color: #4f46e5;
+    width: 100%;
+    transition: height 0.2s ease-out;
+    z-index: 1;
+}
+
+.timeline-step {
+    position: relative;
+    width: 100%;
+    margin: 60px 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.timeline-step.right {
+    justify-content: flex-end;
+}
+
+.step-content {
+    background-color: #111;
+    padding: 25px 30px;
+    border-radius: 10px;
+    max-width: 450px;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+}
+
+.step-icon {
+    position: absolute;
+    top: 50%;
+    left: 107%;
+    transform: translate(-50%, -50%);
+    background: #000;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    padding: 10px;
+    z-index: 3;
+}
+
+.timeline-step.right .step-icon {
+    left: -7%;
+    transform: translate(-50%, -50%);
+}
+
+.step-title {
+    font-size: 0.7rempx;
+    color: #ccc;
+}
+
+.tl-head {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 3.5rem;
+}
+
+.tl-head span {
+    font-style: italic;
+    font-size: 2rem;
+}
+
+.step-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.step-subtitle {
+    font-size: 1rem;
+    color: #888;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.step-content h3 {
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.step-content p {
+    color: #aaa;
+    font-size: 14px;
+}
+
+
+/* Responsive Design */
+
+@media screen and (max-width: 768px) {
+    .timeline-line {
+        left: 20px;
+        transform: none;
+    }
+    .timeline-step,
+    .timeline-step.right {
+        justify-content: center;
+    }
+    .step-content {
+        margin-left: 40px;
+        max-width: 90%;
+    }
+    .step-icon {
+        left: 20px !important;
+        transform: translateY(-50%);
+    }
+}

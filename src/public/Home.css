@@ -1,0 +1,155 @@
+.HomeHero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    color: white;
+}
+
+.Home {
+    position: relative;
+    z-index: 1;
+    color: white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+/* .video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: brightness(0.5);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(0.5);
+    transition: transform 0.1s ease-out;
+    
+} */
+
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    overflow: hidden;
+    pointer-events: none;
+    /* so it doesn't block interaction */
+}
+
+.video-container video {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5);
+}
+
+.home-animation {
+    width: 100%;
+}
+
+.home-left {
+    color: white;
+    margin-top: 2rem;
+    width: 50%;
+}
+
+.home-right {
+    width: 40%;
+    /* height: 100vh; */
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+.home-super {
+    font-size: 3.5rem;
+    font-weight: bolder;
+    line-height: 4rem;
+    margin-bottom: 1rem;
+}
+
+.home-sub {
+    font-size: 1.7rem;
+    /* font-weight: bolder; */
+}
+
+.btns {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.btns button {
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.btn1 {
+    background-color: white;
+    color: black;
+    border: 2px solid white;
+}
+
+.btn2 {
+    border: 2px solid white;
+    color: white;
+}
+
+@media screen and (max-width:991px) {
+    .HomeHero {
+        height: auto;
+    }
+    .Home {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .home-left {
+        margin-top: 6rem;
+        width: 80%;
+    }
+    .home-right {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .home-left {
+        width: 90%;
+    }
+    .home-super {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+    .home-sub {
+        font-size: 1.6rem;
+    }
+    .btns {
+        flex-direction: column;
+        width: 100%;
+    }
+    .btns button {
+        width: 100%;
+    }
+    .home-right {
+        width: 90%;
+    }
+}
