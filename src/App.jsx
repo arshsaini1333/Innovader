@@ -1,10 +1,11 @@
 
 import './App.css'
 import Navbar from './Components/Navbar'
-import Home from './Components/Home'
+// import Home from './Components/Home'
 import Services from './Components/Services'
 import bg from './assets/bg2.mp4'
 import Timeline from './Components/Timeline'
+import HeroSection from './Components/HeroSection'
 function App() {
   
 
@@ -17,9 +18,11 @@ function App() {
         </video>
       </div>
       <Navbar/>
-      <Home/>
+      {/* <Home/> */}
+      <HeroSection/>
       {/* <div className="spacer"></div> */}
       <Services/>
+      {/* <Services/> */}
       <Timeline/>
     </>
   )

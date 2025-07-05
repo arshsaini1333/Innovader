@@ -1,6 +1,7 @@
 /* Black background section */
 
 .dark-section {
+    margin-top: 50vh;
     height: auto;
     background-color: #0e0e0e;
     padding: 60px 20px;
