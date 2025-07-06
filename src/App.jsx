@@ -9,6 +9,7 @@ import HeroSection from './Components/HeroSection'
 import AquaticAnimals from './Components/Portfolio'
 // import ContactForm from './Components/ContactForm'
 import ContactForm from './Components/ContactForm'
+import Technologies from './Components/Technologies'
 import Footer from './Components/Footer'
 function App() {
   
@@ -26,6 +27,7 @@ function App() {
       <Services/>
       <Timeline/>
       <AquaticAnimals/>
+      <Technologies/>
       <ContactForm/>
       <Footer/>
     </>
