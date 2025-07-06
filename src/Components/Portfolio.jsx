@@ -23,6 +23,7 @@ const ScreenshotCarousel = () => {
     <div className={styles.container}>
         <h1><span>Our</span> Projects</h1>
       <Swiper
+      
         effect="coverflow"
         grabCursor={true}
         centeredSlides={true}
@@ -36,6 +37,10 @@ const ScreenshotCarousel = () => {
           depth: 300,
           modifier: 2.5,
           slideShadows: true
+        }}
+        autoplay={{
+          delay: 2000, // Time between slides in ms
+          disableOnInteraction: false, // Keeps autoplay after interaction
         }}
         className={styles.swiperContainer}
       >
