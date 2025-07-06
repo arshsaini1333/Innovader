@@ -39,7 +39,6 @@
     text-transform: uppercase;
     font-weight: bold;
     margin-top: -2rem;
-    font-family: "Averia Serif Libre", serif;
 }
 
 .scrolled-class {
@@ -47,7 +46,9 @@
     height: 205vh;
 }
 
-.hh-content {
+.hh-content {}
+
+.chrome {
     background-color: transparent;
     position: relative;
     top: 10rem;
@@ -58,16 +59,48 @@
     /* background-color: green; */
     flex-direction: column;
     justify-content: center;
-    gap: 13rem;
     align-items: center;
     color: white;
+    gap: 13rem;
+}
+
+.edg {
+    background-color: transparent;
+    position: relative;
+    top: 10rem;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    display: flex;
+    /* background-color: green; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 15rem;
+}
+
+.safari {
+    background-color: transparent;
+    position: relative;
+    top: 10rem;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    display: flex;
+    /* background-color: green; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 18rem;
 }
 
 .img img {
     height: 30rem;
 }
 
-.hh-content .content {
+.content {
     font-size: 2rem;
     font-weight: bolder;
 }

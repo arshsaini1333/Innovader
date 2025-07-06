@@ -5,7 +5,26 @@ export default function HeroSection()
 {
     const [scrolled, setScrolled] = useState(false);
 
+    let classN = 'chrome'
+
+    // const getBrowserName = () => {
+      const userAgent = navigator.userAgent;
+    
+      if (userAgent.includes("Chrome") && !userAgent.includes("Edg") && !userAgent.includes("OPR")) {
+        classN = 'chrome'
+      } else if (userAgent.includes("Safari") && !userAgent.includes("Chrome")) {
+        classN = 'safari'
+      } else if (userAgent.includes("Edg")) {
+        classN = 'edg'
+      }
+       else {
+        classN = 'chrome'
+      }
+    // };
+ console.log(classN)
+
     useEffect(() => {
+      // getBrowserName()
       const handleScroll = () => {
         const offset = window.scrollY;
         if (offset > 362.4) {
@@ -25,7 +44,7 @@ export default function HeroSection()
           <div className="hhh-sub">Responsive</div>
           <div className="hhh-super">Web Designing</div>
         </div>
-        <div className="hh-content">
+        <div className={classN}>
             <div className="img">
                 <img src={iphone} alt="" />
             </div>
