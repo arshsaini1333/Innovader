@@ -49,7 +49,7 @@ export default function HeroSection()
                 <img src={iphone} alt="" />
             </div>
             <div className="content">
-            Responsive website designing that grabs attention and drives action
+            That grabs attention and drives action
             </div>
         </div>
         </div>
