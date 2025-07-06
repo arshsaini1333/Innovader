@@ -8,7 +8,7 @@ export default function HeroSection()
     useEffect(() => {
       const handleScroll = () => {
         const offset = window.scrollY;
-        if (offset > 466.39) {
+        if (offset > 362.4) {
           setScrolled(true);
         } else {
           setScrolled(false);
@@ -21,13 +21,16 @@ export default function HeroSection()
     }, []);
     return(
         <div className="HeroSection">
-        <div className={`hh-headings ${scrolled ? 'scrolled-class' : ''}`}>Website Design</div>
+        <div className={`hh-headings ${scrolled ? 'scrolled-class' : ''}`}>
+          <div className="hhh-sub">Responsive</div>
+          <div className="hhh-super">Web Designing</div>
+        </div>
         <div className="hh-content">
             <div className="img">
                 <img src={iphone} alt="" />
             </div>
             <div className="content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque nulla sint deserunt, amet recusandae, provident laudantium praesentium nostrum, voluptatum natus quaerat earum aspernatur quisquam. Earum porro voluptatum totam mollitia est?
+            Responsive website designing that grabs attention and drives action
             </div>
         </div>
         </div>

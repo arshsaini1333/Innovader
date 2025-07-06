@@ -6,6 +6,10 @@ import Services from './Components/Services'
 import bg from './assets/bg2.mp4'
 import Timeline from './Components/Timeline'
 import HeroSection from './Components/HeroSection'
+import AquaticAnimals from './Components/Portfolio'
+// import ContactForm from './Components/ContactForm'
+import ContactForm from './Components/ContactForm'
+import Footer from './Components/Footer'
 function App() {
   
 
@@ -18,12 +22,12 @@ function App() {
         </video>
       </div>
       <Navbar/>
-      {/* <Home/> */}
       <HeroSection/>
-      {/* <div className="spacer"></div> */}
       <Services/>
-      {/* <Services/> */}
       <Timeline/>
+      <AquaticAnimals/>
+      <ContactForm/>
+      <Footer/>
     </>
   )
 }

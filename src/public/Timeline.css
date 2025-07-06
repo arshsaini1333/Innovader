@@ -27,7 +27,7 @@
 .timeline-progress {
     background-color: #4f46e5;
     width: 100%;
-    transition: height 0.6s ease-out;
+    transition: height 5s ease-out;
     z-index: 1;
 }
 

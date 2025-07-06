@@ -22,21 +22,37 @@
     top: 0;
     left: 0;
     z-index: 1;
-    font-size: 10rem;
+    flex-direction: column;
+}
+
+.hhh-sub {
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.hhh-super {
+    background: linear-gradient(90deg, #ff6a00, #ee0979);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: -2rem;
 }
 
 .scrolled-class {
     position: absolute;
-    height: 230vh;
+    height: 205vh;
 }
 
 .hh-content {
     background-color: transparent;
     position: relative;
-    top: 15rem;
+    top: 10rem;
     left: 0;
     z-index: 5;
-    width: 50%;
+    width: 100%;
     display: flex;
     /* background-color: green; */
     flex-direction: column;
@@ -48,4 +64,9 @@
 
 .img img {
     height: 30rem;
+}
+
+.hh-content .content {
+    font-size: 2rem;
+    font-weight: bolder;
 }

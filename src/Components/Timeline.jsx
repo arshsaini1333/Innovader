@@ -7,28 +7,28 @@ import RocketLaunchIcon from '@mui/icons-material/RocketLaunch';
 
 const steps = [
   {
-    title: 'First Step',
+    title: '1',
     subtitle: 'Consultation',
     heading: 'Understanding Your Needs',
     description: 'We discuss your vision, goals, and requirements to craft a perfect website plan.',
     icon: <ChatIcon sx={{ fontSize: 40, color: '#00ff73' }} />,
   },
   {
-    title: 'Second Step',
+    title: '2',
     subtitle: 'Designing',
     heading: 'Creating the Blueprint',
     description: 'We design a stunning prototype that aligns with your brand and user experience.',
     icon: <PaletteIcon sx={{ fontSize: 40, color: '#3f88ff' }} />,
   },
   {
-    title: 'Third Step',
+    title: '3',
     subtitle: 'Development',
     heading: 'Building Your Website',
     description: 'Our expert developers bring the design to life with a fully functional website.',
     icon: <CodeIcon sx={{ fontSize: 40, color: '#00ffff' }} />,
   },
   {
-    title: 'Final Step',
+    title: '4',
     subtitle: 'Launch & Support',
     heading: 'Go Live & Ongoing Support',
     description: 'We launch your website and provide support to keep it running smoothly.',
