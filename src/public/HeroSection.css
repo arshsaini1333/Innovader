@@ -217,11 +217,11 @@
         font-size: 1.3rem;
     }
     .chrome {
-        gap: 15rem;
+        gap: 25rem;
         top: 18rem;
     }
     .scrolled-classchrome {
-        height: 180vh;
+        height: 150vh;
     }
     .content div {
         font-size: 1rem;
@@ -248,13 +248,13 @@
     }
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:450px) {
     .chrome {
         top: 15rem;
-        gap: 15rem;
+        gap: 20rem;
     }
     .scrolled-classchrome {
-        height: 200vh;
+        height: 180vh;
     }
     .scrolled-classsafari {
         height: 190vh;
