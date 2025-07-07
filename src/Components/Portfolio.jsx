@@ -20,7 +20,7 @@ const images = [img1, img2, img3, img4, img5, img6, img7, img8];
 
 const ScreenshotCarousel = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="portfolio">
         <h1><span>Our</span> Projects</h1>
       <Swiper
       
