@@ -40,7 +40,7 @@ export default function HeroSection()
     }, []);
     return(
         <div className="HeroSection" id='home'>
-        <div className={`hh-headings ${scrolled ? 'scrolled-class' : ''}`}>
+        <div className={`hh-headings ${scrolled ? `scrolled-class${classN}` : ''}`}>
           <div className="hhh-sub">Responsive</div>
           <div className="hhh-super">Web Designing</div>
         </div>

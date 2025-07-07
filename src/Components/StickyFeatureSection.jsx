@@ -11,25 +11,25 @@ const StickyFeatureSection = () => {
       {/* Left Column - Sticky */}
       <aside className="feature-left">
       <h1 className='stickyhead' id='whyus'><span>Why</span> Innovader Technologies</h1>
-        <h3>SEO-Friendly Website Setup</h3>
+        <h3>1. SEO-Friendly Website Setup</h3>
         <p>On-page SEO, proper structure, and performance to rank faster.</p>
 
-        <h3>Analytics Integration</h3>
+        <h3>2. Analytics Integration</h3>
         <p>
           Connect Google Analytics, Tag Manager, or Facebook Pixel to track users.
         </p>
 
-        <h3>Conversion Optimization Setup</h3>
+        <h3>3. Conversion Optimization Setup</h3>
         <p>
           Add CTAs, lead forms, heatmaps & chatbots to capture more leads.
         </p>
-        <h3>Interactive UI with 3D Animations</h3>
+        <h3>4. Interactive UI with 3D Animations</h3>
 <p>Create immersive experiences using modern 3D effects and smooth animations that engage users.</p>
 
-<h3>Dynamic & Responsive Web Design</h3>
+<h3>5. Dynamic & Responsive Web Design</h3>
 <p>Craft device-friendly websites that adapt seamlessly across all screen sizes and user behaviors.</p>
 
-<h3>Database-Driven Functionality</h3>
+<h3>6. Database-Driven Functionality</h3>
 <p>Build powerful, data-backed features using robust database integration for real-time performance.</p>
 
       </aside>

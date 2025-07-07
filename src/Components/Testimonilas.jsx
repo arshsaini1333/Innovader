@@ -69,6 +69,7 @@ const Testimonilas = () => {
         modules={[ Autoplay]}
         spaceBetween={30}
         slidesPerView={1}
+        loop={true}
         autoplay={{ delay: 3000 }}
         pagination={{ clickable: true }}
         breakpoints={{

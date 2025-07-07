@@ -42,9 +42,19 @@
     margin-top: -2rem;
 }
 
-.scrolled-class {
+.scrolled-classchrome {
     position: absolute;
     height: 205vh;
+}
+
+.scrolled-classedg {
+    position: absolute;
+    height: 205vh;
+}
+
+.scrolled-classsafari {
+    position: absolute;
+    height: 190vh;
 }
 
 .hh-content {}
