@@ -27,7 +27,8 @@
 
 .hhh-sub {
     font-size: 3rem;
-    font-style: italic;
+    /* font-style: italic; */
+    text-transform: uppercase;
     font-weight: bolder;
 }
 
@@ -103,4 +104,5 @@
 .content {
     font-size: 2rem;
     font-weight: bolder;
+    text-transform: uppercase;
 }

@@ -1,122 +1,132 @@
-/* Black background section */
-
-.dark-section {
-    margin-top: 50vh;
-    height: auto;
-    background-color: #0e0e0e;
-    padding: 60px 20px;
-    color: white;
+.services-section {
+    background-color: #0d0d0d;
+    color: #fff;
+    padding: 4rem 2rem;
     text-align: center;
-    padding-bottom: 8rem;
+    margin-top: 50vh;
 }
 
-.dark-heading {
-    font-size: 2rem;
+.services-section h2 {
+    font-size: 2.5rem;
     font-weight: bold;
-    margin-bottom: 50px;
+    margin-bottom: 3rem;
 }
 
 
-/* Container for the stepped layout */
+/* Columns */
 
-.dark-cards-container {
+.services-columns {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 5rem;
-    position: relative;
+    align-items: flex-start;
+    gap: 2rem;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    flex-wrap: wrap;
+    padding: 0 4rem;
+}
+
+.services-column {
+    flex: 1 1 31%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 
-/* Card design */
+/* Stair-step column offset */
 
-.dark-card {
-    width: 28%;
-    background-color: #1a1a1a;
-    border-radius: 10px;
-    padding: 24px;
+.column-2 {
+    margin-top: 40px;
+}
+
+.column-3 {
+    margin-top: 80px;
+}
+
+
+/* Card Styling */
+
+.service-card {
+    background-color: #1c1c1c;
+    border-radius: 16px;
+    padding: 2rem;
     text-align: left;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease;
-    position: relative;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
 }
 
-.dark-card:hover {
-    transform: translateY(-5px);
+.service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
 }
 
-.dark-icon {
+.service-card .icon {
+    color: #a855f7;
     background-color: #262626;
     border-radius: 50%;
     padding: 12px;
     display: inline-flex;
     margin-bottom: 16px;
+    height: 4rem;
+    width: 4rem;
 }
+
+.service-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.service-card p {
+    font-size: 0.95rem;
+    color: #ccc;
+    margin-bottom: 1rem;
+}
+
+.service-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem;
+}
+
+.dark-icon {}
 
 .icon {
     color: #7f5af0;
 }
 
-.dark-card h3 {
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin-bottom: 12px;
-}
-
-.dark-card p {
+.service-card li {
+    color: #22c55e;
     font-size: 0.95rem;
-    color: #ccc;
-    margin-bottom: 16px;
+    margin-bottom: 0.5rem;
 }
 
-.dark-card ul {
-    padding-left: 0;
-    list-style: none;
-    color: #8fff8f;
-    margin-bottom: 16px;
-}
-
-.dark-card ul li {
-    margin-bottom: 8px;
+.service-card a {
+    color: #8b5cf6;
+    text-decoration: none;
+    font-weight: 500;
     font-size: 0.9rem;
 }
 
-.dark-card a {
-    color: #7f5af0;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.dark-card a:hover {
-    text-decoration: underline;
+.service-card a:hover {
+    color: #a78bfa;
 }
 
 
-/* Stair step effect */
-
-.stair-0 {
-    top: 0;
-}
-
-.stair-1 {
-    top: 30px;
-}
-
-.stair-2 {
-    top: 60px;
-}
-
-
-/* Responsive behavior */
+/* Responsive fix: remove stair effect on small screens */
 
 @media (max-width: 768px) {
-    .dark-cards-container {
+    .column-2,
+    .column-3 {
+        margin-top: 0;
+    }
+    .services-columns {
         flex-direction: column;
         align-items: center;
     }
-    .stair-0,
-    .stair-1,
-    .stair-2 {
-        top: 0;
+    .services-column {
+        width: 100%;
     }
 }

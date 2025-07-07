@@ -10,6 +10,7 @@ import AquaticAnimals from './Components/Portfolio'
 // import ContactForm from './Components/ContactForm'
 import ContactForm from './Components/ContactForm'
 import Technologies from './Components/Technologies'
+import StickyFeatureSection from './Components/StickyFeatureSection'
 import Footer from './Components/Footer'
 function App() {
   
@@ -28,6 +29,7 @@ function App() {
       <Timeline/>
       <AquaticAnimals/>
       <Technologies/>
+      <StickyFeatureSection/>
       <ContactForm/>
       <Footer/>
     </>

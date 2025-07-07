@@ -64,7 +64,7 @@ const Timeline = () => {
 
   return (
     <div className="timeline-wrapper">
-      <div className='tl-head'> <span>from</span> Concept <span>to</span> Completion</div>
+      <div className='tl-head'> <span>From</span> Concept <span>to</span> Completion</div>
       <div className="timeline" ref={lineRef}>
         <div className="timeline-line">
           <div className="timeline-progress" style={{ height: `${progressHeight}%` }} />
@@ -75,7 +75,7 @@ const Timeline = () => {
             <div className="step-content">
               <div className="step-icon">{step.icon}</div>
               <div className="step-text">
-                <span className="step-title">{step.title}</span>
+                {/* <span className="step-title">{step.title}</span> */}
                 <span className="step-subtitle">{step.subtitle}</span>
                 <h3>{step.heading}</h3>
                 <p>{step.description}</p>

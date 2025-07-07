@@ -7,12 +7,12 @@
     background-color: rgba(0, 0, 0, 0.116);
     padding: 0rem 2rem;
     color: white;
-    position: sticky;
+    position: absolute;
     backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(30px);
     /* for Safari */
     border-radius: 3rem;
-    position: fixed;
+    position: absolute;
     top: 2rem;
     left: 20%;
     margin: 0 auto;
@@ -59,7 +59,7 @@
 }
 
 .call-icon {
-    background-color: #7c80b7;
+    background-color: #a855f7;
     color: white;
     height: 3rem;
     width: 3rem;
