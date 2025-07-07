@@ -170,7 +170,7 @@ textarea::placeholder {
     .form-container button {
         width: 60%;
     }
-    .ch-super {
+    .ch-sub {
         font-size: 1.6rem;
     }
 }
