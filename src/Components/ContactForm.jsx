@@ -2,10 +2,10 @@ import '../public/ContactForm.css';
 import { useState } from 'react';
 import Select from 'react-select';
 
-// import { useNavigate } from 'react-router';
+import { useNavigate } from 'react-router';
 export default function HomeContact() {
   const scriptURL =
-    'https://script.google.com/macros/s/AKfycbzt9UpvROsjUYlILwpWgzGdW-lQJl9kxxMoinVgj9DTgVLLPyVn2A_icK8AaYNGW_ka/exec';
+    'https://script.google.com/macros/s/AKfycbw_cmsSDqxs11lE-xODeUXwfyO5CQnneAJdzg6pvqoa0XxO139ZHKKMOv2VjXsGKxHG/exec';
 
   const [formData, setFormData] = useState({
     fName: '',
@@ -14,42 +14,13 @@ export default function HomeContact() {
     phone: '',
     message: ''
   });
-  // const navigate = useNavigate()
+  const navigate = useNavigate()
   const [message, setMessage] = useState('');
   const [submitting, setSubmitting] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setSubmitting(true);
-
-    const fullName = `${formData.fName} ${formData.lName}`;
-    const postData = new FormData();
-    postData.append('name', fullName);
-    postData.append('email', formData.email);
-    postData.append('phone', formData.phone);
-    postData.append('msg', formData.message);
-
-    fetch(scriptURL, {
-      method: 'POST',
-      body: postData,
-      mode: 'no-cors'
-    })
-      .then(() => {
-        setMessage('Form submitted successfully!');
-        setSubmitting(false);
-        setFormData({ fName: '', lName: '', email: '', phone: '', message: '' });
-
-        // navigate('/thankyou')
-      })
-      .catch(() => {
-        setMessage('Error submitting the form. Try again.');
-        setSubmitting(false);
-      });
   };
 
   const groupedOptions = [
@@ -79,9 +50,43 @@ export default function HomeContact() {
   };
 
 
+  // Form Data
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setSubmitting(true);
+  
+    const fullName = `${formData.fName} ${formData.lName}`;
+    const selectedServices = selectedOptions.map(opt => opt.label).join(', '); // Convert to comma-separated string
+  
+    const postData = new FormData();
+    postData.append('name', fullName);
+    postData.append('email', formData.email);
+    postData.append('phone', formData.phone);
+    postData.append('msg', formData.message);
+    postData.append('opt', selectedServices); // 👈 Add this line
+  
+    fetch(scriptURL, {
+      method: 'POST',
+      body: postData,
+      mode: 'no-cors',
+    })
+      .then(() => {
+        setMessage('Form submitted successfully!');
+        setSubmitting(false);
+        setFormData({ fName: '', lName: '', email: '', phone: '', message: '' });
+        setSelectedOptions([]); // clear the options
+        navigate('/thankyou');
+      })
+      .catch(() => {
+        setMessage('Error submitting the form. Try again.');
+        setSubmitting(false);
+      });
+  };
+  
+
    
   return (
-    <div className="HomeContact" data-aos="fade-up">
+    <div className="HomeContact" id='contact'>
       <div className="subContainer">
         <div className="form-container">
           <div className="ch-heading">
@@ -137,18 +142,6 @@ export default function HomeContact() {
                 />
               </div>
             </div>
-
-            {/* <div className="form-group">
-              <label htmlFor="message">What Can We Help You With?</label>
-              <textarea
-                id="message"
-                name="message"
-                rows="1"
-                value={formData.message}
-                onChange={handleChange}
-                required
-              ></textarea>
-            </div> */}
             <div>
             <Select
         options={groupedOptions}

@@ -91,8 +91,6 @@
     margin: 0 0 1rem;
 }
 
-.dark-icon {}
-
 .icon {
     color: #7f5af0;
 }
@@ -114,10 +112,17 @@
     color: #a78bfa;
 }
 
+.services-section h2 {
+    font-size: 3.5rem;
+}
+
 
 /* Responsive fix: remove stair effect on small screens */
 
 @media (max-width: 768px) {
+    .services-section h2 {
+        font-size: 1.6rem;
+    }
     .column-2,
     .column-3 {
         margin-top: 0;
@@ -125,6 +130,7 @@
     .services-columns {
         flex-direction: column;
         align-items: center;
+        padding: 0;
     }
     .services-column {
         width: 100%;

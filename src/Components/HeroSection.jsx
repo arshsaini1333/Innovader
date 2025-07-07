@@ -1,8 +1,10 @@
 import '../public/HeroSection.css'
 import iphone from '../assets/macbook.png'
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router';
 export default function HeroSection()
 {
+  const navigate = useNavigate()
     const [scrolled, setScrolled] = useState(false);
 
     let classN = 'chrome'
@@ -38,6 +40,40 @@ export default function HeroSection()
   
       return () => window.removeEventListener('scroll', handleScroll);
     }, []);
+
+
+    // Form
+    const [phone, setPhone] = useState('');
+  const [submitting, setSubmitting] = useState(false);
+  const [message, setMessage] = useState('');
+
+  const scriptURL =
+    'https://script.google.com/macros/s/AKfycbw_cmsSDqxs11lE-xODeUXwfyO5CQnneAJdzg6pvqoa0XxO139ZHKKMOv2VjXsGKxHG/exec'; 
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setSubmitting(true);
+
+    const formData = new FormData();
+    formData.append('phone', phone);
+
+    try {
+      await fetch(scriptURL, {
+        method: 'POST',
+        body: formData,
+        mode: 'no-cors',
+      });
+
+      setMessage('Callback requested successfully!');
+      setPhone('');
+      navigate('/thankyou');
+
+    } catch (error) {
+      setMessage('There was an error. Please try again.');
+    }
+
+    setSubmitting(false);
+  };
     return(
         <div className="HeroSection" id='home'>
         <div className={`hh-headings ${scrolled ? `scrolled-class${classN}` : ''}`}>
@@ -51,13 +87,20 @@ export default function HeroSection()
             <div className="content">
             <div>That grabs attention and drives action</div>
             <div className="callback-form">
-     <form action=""> <input
+            <form onSubmit={handleSubmit}>
+      <input
         type="tel"
-        placeholder="Enter Your Mobile No.*"
+        name="phone"
+        placeholder="Enter Mobile No.*"
         className="callback-input"
         required
+        value={phone}
+        onChange={(e) => setPhone(e.target.value)}
       />
-      <button type='submit' className="callback-button">Request a Callback</button></form>
+      <button type="submit" className="callback-button" disabled={submitting}>
+        {submitting ? 'Requesting Callback' : 'Request a Callback'}
+      </button>
+      </form>
     </div>
             </div>
         </div>

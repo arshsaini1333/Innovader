@@ -2,7 +2,7 @@ import {
     FaUsers, FaLightbulb, FaListAlt, FaAward,
     FaShieldAlt, FaHeadset, FaRocket, FaHandshake
   } from 'react-icons/fa';
-  import './WhyUs.css';
+  import '../public/WhyUs.css';
   
   export default function WhyUsSection() {
     return (

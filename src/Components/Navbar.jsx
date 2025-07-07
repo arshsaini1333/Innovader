@@ -23,11 +23,11 @@ const Navbar = () => {
         
       </div>
 
-      <div className='contact-btn'>
+      <a className='contact-btn' href='#contact'>
         <span></span>
           <span className='cbt'>Let's Talk</span>
           <span className='call-icon'><CallIcon/></span>
-      </div>
+      </a>
 
       <div className="hamburger" onClick={toggleMenu}>
         <span className={isOpen ? 'bar open' : 'bar'}></span>

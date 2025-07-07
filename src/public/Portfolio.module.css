@@ -64,3 +64,55 @@
     background-color: #1b70ef!important;
     /* Active dot */
 }
+
+
+/* Tablet screens */
+
+@media (max-width: 1024px) {
+    .swiperSlide {
+        width: 600px !important;
+        height: 320px !important;
+    }
+    .container h1 {
+        font-size: 2.8rem;
+    }
+    .container h1 span {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* Mobile screens */
+
+@media (max-width: 768px) {
+    .swiperSlide {
+        width: 90% !important;
+        height: 260px !important;
+    }
+    .container h1 {
+        font-size: 2.2rem;
+    }
+    .container h1 span {
+        font-size: 1.3rem;
+    }
+}
+
+
+/* Extra small screens (phones in portrait) */
+
+@media (max-width: 480px) {
+    .swiperSlide {
+        width: 100% !important;
+        height: 200px !important;
+        border-radius: 10px;
+    }
+    .swiperSlide img {
+        border-radius: 10px;
+    }
+    .container h1 {
+        font-size: 1.8rem;
+    }
+    .container h1 span {
+        font-size: 1rem;
+    }
+}

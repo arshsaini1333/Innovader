@@ -126,3 +126,114 @@
     font-size: 2rem;
     font-style: italic;
 }
+
+
+/* ========== Responsive Testimonials ========== */
+
+@media (max-width: 1024px) {
+    .testimonial-container {
+        width: 90%;
+        padding: 30px 10px;
+    }
+    .testimonial-container h1 {
+        font-size: 2.8rem;
+    }
+    .testimonial-container h1 span {
+        font-size: 1.6rem;
+    }
+    .testimonial-box {
+        max-width: 90%;
+    }
+    .testimonial-content {
+        padding: 25px 25px 25px 50px;
+    }
+    .quote-icon {
+        width: 32px;
+        height: 32px;
+        font-size: 16px;
+    }
+    .testimonial-text {
+        font-size: 16px;
+    }
+    .testimonial-author strong {
+        font-size: 1.1rem;
+    }
+    .testimonial-author p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonial-container h1 {
+        font-size: 2.2rem;
+    }
+    .testimonial-container h1 span {
+        font-size: 1.4rem;
+    }
+    .testimonial-box {
+        max-width: 100%;
+        margin-top: 30px;
+    }
+    .testimonial-content {
+        padding: 20px 20px 20px 45px;
+    }
+    .quote-icon {
+        top: 20px;
+        width: 28px;
+        height: 28px;
+        font-size: 14px;
+    }
+    .testimonial-text {
+        font-size: 15px;
+    }
+    .testimonial-author {
+        margin-left: 45px;
+    }
+    .testimonial-author strong {
+        font-size: 1rem;
+    }
+    .testimonial-author p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonial-container {
+        width: 95%;
+        padding: 20px 10px;
+    }
+    .testimonial-container h1 {
+        font-size: 1.8rem;
+    }
+    .testimonial-container h1 span {
+        font-size: 1.2rem;
+    }
+    .testimonial-content {
+        padding: 16px 16px 16px 40px;
+        min-height: auto;
+    }
+    .quote-icon {
+        top: 16px;
+        width: 24px;
+        height: 24px;
+        font-size: 12px;
+    }
+    .testimonial-author {
+        margin-left: 40px;
+    }
+    .testimonial-text {
+        font-size: 14px;
+    }
+    .testimonial-author strong {
+        font-size: 0.95rem;
+    }
+    .testimonial-author p {
+        font-size: 13px;
+    }
+    .testimonial-arrow {
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid white;
+        margin-left: 40px;
+    }
+}

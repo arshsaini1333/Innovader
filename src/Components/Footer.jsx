@@ -14,17 +14,18 @@ const Footer = () => {
         <div className="footer-links">
           <h4>Quick Links</h4>
           <ul>
-        <li>Overview</li>
-        <li>About Us</li>
-        <li>Projects</li>
-        <li>Contact</li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Projects</a></li>
+        <li><a href="#whyus">Why Us</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
         </div>
 
         <div className="footer-contact">
           <h4>Contact</h4>
           <p>📍 Chhattarpur, South Delhi</p>
-          <p>📞 +91 987456123</p>
+          <p>📞 +91 8447149389</p>
           <p>✉️ hr@innovader.in</p>
         </div>
       </div>
