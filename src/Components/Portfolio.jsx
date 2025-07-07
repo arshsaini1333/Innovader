@@ -1,6 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCoverflow, Pagination } from "swiper/modules";
+import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
@@ -30,7 +30,7 @@ const ScreenshotCarousel = () => {
         slidesPerView="auto"
         loop={true}
         pagination={{ clickable: true }}
-        modules={[EffectCoverflow, Pagination]}
+        modules={[EffectCoverflow, Pagination, Autoplay]}
         coverflowEffect={{
           rotate: 0,
           stretch: 0,
