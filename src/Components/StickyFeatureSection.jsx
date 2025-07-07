@@ -6,10 +6,11 @@ import { FaUsers, FaLightbulb, FaListAlt, FaAward, FaShieldAlt, FaHeadset, FaRoc
 const StickyFeatureSection = () => {
   return (
     <>
-    <h1 className='stickyhead' id='whyus'><span>Why</span> Innovader Technologies</h1>
+   
     <section className="feature-wrapper">
       {/* Left Column - Sticky */}
       <aside className="feature-left">
+      <h1 className='stickyhead' id='whyus'><span>Why</span> Innovader Technologies</h1>
         <h3>SEO-Friendly Website Setup</h3>
         <p>On-page SEO, proper structure, and performance to rank faster.</p>
 

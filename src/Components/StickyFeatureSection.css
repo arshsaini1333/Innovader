@@ -1,7 +1,7 @@
 .feature-wrapper {
     display: flex;
     gap: 4rem;
-    padding: 4rem 2rem;
+    padding: 2rem 2rem;
     /* max-width: 1200px; */
     margin: auto;
 }
@@ -21,7 +21,7 @@
 .feature-left {
     flex: 1;
     position: sticky;
-    top: 100px;
+    top: 50px;
     align-self: flex-start;
     padding: 1rem;
     background: #0d0d0d;
