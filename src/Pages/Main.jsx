@@ -12,6 +12,7 @@ import Technologies from '../Components/Technologies'
 import WhyUsSection from '../Components/WhyUsSection'
 import Testimonilas from '../Components/Testimonilas'
 import Footer from '../Components/Footer'
+import WhatsAppButton from '../Components/Whatsapp'
 
 
 export default function Main()
@@ -33,6 +34,7 @@ export default function Main()
       <WhyUsSection/>
       <Testimonilas/>
       <ContactForm/>
+      <WhatsAppButton/>
       <Footer/>
     </>
     )
