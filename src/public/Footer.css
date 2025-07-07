@@ -25,7 +25,8 @@
 
 .brands {
     /* color: #a27e27; */
-    color: #1b70ef;
+    /* color: #1b70ef; */
+    color: white;
     margin-bottom: 10px;
     display: flex;
     align-items: flex-start;
