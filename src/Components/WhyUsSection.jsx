@@ -29,7 +29,7 @@ export default function WhyUsSection() {
 
   return (
     <>
-    <section className="why-us-container">
+    <section className="why-us-container" id='whyus'>
       {/* Left section (static) */}
       <div className="left-static">
         <h2><i>Why</i> Innovader Technologies</h2>
