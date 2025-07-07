@@ -257,10 +257,10 @@
         height: 180vh;
     }
     .scrolled-classsafari {
-        height: 190vh;
+        height: 200vh;
     }
     .safari {
-        gap: 15rem;
-        top: 18rem;
+        gap: 12rem;
+        top: 15rem;
     }
 }
