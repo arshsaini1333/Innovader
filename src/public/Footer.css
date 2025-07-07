@@ -56,6 +56,8 @@
     margin-bottom: 10px;
     /* color: #a27e27; */
     color: #1b70ef;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 .footer-links ul {
@@ -93,6 +95,26 @@
     border-top: 1px solid #444;
     font-size: 13px;
     color: white;
+}
+
+.social-links {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.social-links a {
+    color: #1976d2;
+    opacity: 0.5;
+    transition: all 0.2s ease, color 0.2s ease;
+}
+
+.social-links a:hover {
+    color: #1976d2;
+    /* Primary blue */
+    opacity: 1;
+    transform: scale(1.2);
 }
 
 @media screen and (max-width: 768px) {

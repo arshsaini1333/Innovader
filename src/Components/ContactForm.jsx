@@ -12,7 +12,7 @@ export default function HomeContact() {
     lName: '',
     email: '',
     phone: '',
-    message: ''
+    opt: ''
   });
   const navigate = useNavigate()
   const [message, setMessage] = useState('');
@@ -23,31 +23,6 @@ export default function HomeContact() {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const groupedOptions = [
-    {
-      label: 'Services',
-      options: [
-        { value: 'wd', label: 'Custom Website Development' },
-        { value: 'wrd', label: 'Frontend Development' },
-        { value: 'bvg', label: 'Backend Development' },
-        { value: 'bfs', label: 'Full-Stack Web Development' },
-        { value: 'logo', label: 'Custom E-commerce Website' },
-        { value: 'web', label: 'Shopify Store Development' },
-        { value: 'seo', label: 'SEO Optimization' },
-        { value: 'iao', label: 'Image & Asset Optimization' },
-        { value: 'llc', label: 'Lazy Loading & Code Splitting' },
-        { value: 'bug', label: 'Bug Fixing & Debugging' },
-        
-      ],
-    },
-  ];
-
-
-  const [selectedOptions, setSelectedOptions] = useState([]);
-
-  const selectingOPT = (selected) => {
-    setSelectedOptions(selected || []);
-  };
 
 
   // Form Data
@@ -56,14 +31,13 @@ export default function HomeContact() {
     setSubmitting(true);
   
     const fullName = `${formData.fName} ${formData.lName}`;
-    const selectedServices = selectedOptions.map(opt => opt.label).join(', '); // Convert to comma-separated string
   
     const postData = new FormData();
     postData.append('name', fullName);
     postData.append('email', formData.email);
     postData.append('phone', formData.phone);
     postData.append('msg', formData.message);
-    postData.append('opt', selectedServices); // 👈 Add this line
+    postData.append('opt', formData.opt); // 👈 Add this line
   
     fetch(scriptURL, {
       method: 'POST',
@@ -73,8 +47,8 @@ export default function HomeContact() {
       .then(() => {
         setMessage('Form submitted successfully!');
         setSubmitting(false);
-        setFormData({ fName: '', lName: '', email: '', phone: '', message: '' });
-        setSelectedOptions([]); // clear the options
+        setFormData({ fName: '', lName: '', email: '', phone: '', message: '', opt:'' });
+        
         navigate('/thankyou');
       })
       .catch(() => {
@@ -90,7 +64,8 @@ export default function HomeContact() {
       <div className="subContainer">
         <div className="form-container">
           <div className="ch-heading">
-            <div className="ch-sub">Get in Touch</div>
+            <div className="ch-super">Your Competitor Already Has a Website. Where’s Yours?</div>
+            <div className="ch-sub">Let’s build your online presence Today</div>
           </div>
           <form className="ch-form" onSubmit={handleSubmit}>
             <div className="form-row">
@@ -142,23 +117,10 @@ export default function HomeContact() {
                 />
               </div>
             </div>
-            <div>
-            <Select
-        options={groupedOptions}
-        isMulti
-        value={selectedOptions}
-        onChange={selectingOPT}
-        className="react-select-container"
-        classNamePrefix="react-select"
-        placeholder="Select all options"
-      />
-      <div className="selected-tags">
-        {selectedOptions.map((opt) => (
-          <span key={opt.value} className="tag">
-            {/* {opt.label} */}
-          </span>
-        ))}
-      </div>
+            <div className='form-group'>
+              <label htmlFor="msg">Business Type</label>
+              <textarea name="opt" id="msg" rows={1} value={formData.opt}
+                  onChange={handleChange}></textarea>
             </div>
             <button type="submit" className={`submitbtn ${submitting ? 'blur-bt' : ''}`}>
               {submitting ? 'Submitting...' : 'Book a Call'}

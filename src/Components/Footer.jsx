@@ -1,7 +1,15 @@
 import React from 'react';
 import '../public/Footer.css';
 import logo from '../assets/logo.png'
-import { Link } from "react-router-dom";
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import CallIcon from '@mui/icons-material/Call';
+import DraftsIcon from '@mui/icons-material/Drafts';
+import { Box, IconButton } from '@mui/material';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import { Link } from 'react-router';
 const Footer = () => {
   return (
     <footer className="footer">
@@ -17,7 +25,7 @@ const Footer = () => {
         <li><a href="#home">Home</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#portfolio">Projects</a></li>
-        <li><a href="#whyus">Why Us</a></li>
+        <li><a href="#whyus">Why Choose Us</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
         </div>
@@ -26,7 +34,22 @@ const Footer = () => {
           <h4>Contact</h4>
           <p>📍 Chhattarpur, South Delhi</p>
           <p>📞 +91 8447149389</p>
-          <p>✉️ hr@innovader.in</p>
+          <p>📩  Hr@innovader.in</p>
+          <div className="social-links">
+      <a href="https://www.instagram.com/innovader_technologies_?igsh=MWp4cHZzZzNlNGJqeg==" target="_blank" rel="noopener noreferrer">
+        <InstagramIcon  />
+      </a>
+      <a href="https://www.facebook.com/share/195spd5srR/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
+      <FacebookIcon  />
+      
+      </a>
+      <a href="https://x.com/Innovadertech" target="_blank" rel="noopener noreferrer">
+        <TwitterIcon  />
+      </a>
+      <a href="https://www.linkedin.com/company/innovader-technologiess/posts/?feedView=all" target="_blank" rel="noopener noreferrer">
+      <LinkedInIcon  />
+      </a>
+    </div>
         </div>
       </div>
 

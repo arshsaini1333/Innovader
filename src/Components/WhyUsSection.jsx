@@ -14,8 +14,8 @@ import StorageIcon from '@mui/icons-material/Storage';
 
 export default function WhyUsSection() {
   const stats = [
-    { icon: <FaUsers />, value: "1000+", text: "Over 1000+ Trusted Clients Around the Globe." },
-    { icon: <FaLightbulb />, value: "500+", text: "Successful Web Project Delivery Track Records with Satisfaction." },
+    { icon: <FaUsers />, value: "100+", text: "Over 1000+ Trusted Clients Around the Globe." },
+    { icon: <FaLightbulb />, value: "80+", text: "Successful Web Project Delivery Track Records with Satisfaction." },
     { icon: <FaListAlt />, value: "100%", text: "Transparency in Process, Tasks & Milestones." },
     { icon: <FaAward />, value: "15+", text: "Backed with a Decade of Industry Expertise in delivering successful projects." },
     { icon: <FaShieldAlt />, value: "Secure", text: "Data security and privacy ensured through industry standards." },
