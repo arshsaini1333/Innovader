@@ -106,3 +106,48 @@
     font-weight: bolder;
     text-transform: uppercase;
 }
+
+
+/* CallbackForm.css */
+
+.callback-form {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(90deg, #181818, #181818) padding-box, linear-gradient(to right, #4b4b4b, #111) border-box;
+    border: 1px solid transparent;
+    border-radius: 999px;
+    padding: 4px;
+    width: fit-content;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    margin-top: 1rem;
+    align-self: center;
+}
+
+.callback-input {
+    background: transparent;
+    border: none;
+    padding: 12px 20px;
+    color: #ccc;
+    outline: none;
+    border-radius: 999px 0 0 999px;
+    font-size: 16px;
+    min-width: 200px;
+}
+
+.callback-button {
+    background-color: #7c80b7da;
+    color: #000;
+    border: none;
+    padding: 12px 24px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: white;
+    border-radius: 999px;
+    transition: background 0.3s ease;
+}
+
+.callback-button:hover {
+    background-color: #7c80b7;
+}

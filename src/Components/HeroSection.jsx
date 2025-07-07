@@ -49,7 +49,16 @@ export default function HeroSection()
                 <img src={iphone} alt="" />
             </div>
             <div className="content">
-            That grabs attention and drives action
+            <div>That grabs attention and drives action</div>
+            <div className="callback-form">
+     <form action=""> <input
+        type="tel"
+        placeholder="Enter Your Mobile No.*"
+        className="callback-input"
+        required
+      />
+      <button type='submit' className="callback-button">Request a Callback</button></form>
+    </div>
             </div>
         </div>
         </div>
