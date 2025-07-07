@@ -3,6 +3,14 @@ import {
   FaShieldAlt, FaHeadset, FaRocket, FaHandshake
 } from 'react-icons/fa';
 import '../public/WhyUs.css';
+import TipsAndUpdatesIcon from '@mui/icons-material/TipsAndUpdates';
+
+import ShowChartIcon from '@mui/icons-material/ShowChart';
+import LeaderboardIcon from '@mui/icons-material/Leaderboard';
+import WifiProtectedSetupIcon from '@mui/icons-material/WifiProtectedSetup';
+import AnimationIcon from '@mui/icons-material/Animation';
+import PreviewIcon from '@mui/icons-material/Preview';
+import StorageIcon from '@mui/icons-material/Storage';
 
 export default function WhyUsSection() {
   const stats = [
@@ -20,18 +28,20 @@ export default function WhyUsSection() {
   const allStats = [...stats, ...stats];
 
   return (
+    <>
     <section className="why-us-container">
       {/* Left section (static) */}
       <div className="left-static">
         <h2><i>Why</i> Innovader Technologies</h2>
         <ol>
-          <li><span>1. SEO-Friendly Website Setup</span><br />On-page SEO, proper structure, and performance to rank faster.</li>
-          <li><span>2. Analytics Integration</span><br />Connect Google Analytics, Tag Manager, or Facebook Pixel to track users.</li>
-          <li><span>3. Conversion Optimization Setup</span><br />Add CTAs, lead forms, heatmaps & chatbots to capture more leads.</li>
-          <li><span>4. Interactive UI with 3D Animations</span><br />Modern 3D effects and smooth animations that engage users.</li>
-          <li><span>5. Dynamic & Responsive Web Design</span><br />Craft device-friendly websites that adapt across screen sizes.</li>
-          <li><span>6. Database-Driven Functionality</span><br />Build robust database integration for real-time performance.</li>
+          <li><ShowChartIcon/><span> SEO-Friendly Website Setup</span></li>
+          <li><LeaderboardIcon/><span> Analytics Integration</span></li>
+          <li><WifiProtectedSetupIcon/><span> Conversion Optimization Setup</span></li>
+          <li><AnimationIcon/><span> Interactive UI with 3D Animations</span></li>
+          <li><PreviewIcon/><span>Dynamic & Responsive Web Design</span></li>
+          <li><StorageIcon/><span> Database-Driven Functionality</span></li>
         </ol>
+        
       </div>
 
       {/* Right section (animated) */}
@@ -47,5 +57,10 @@ export default function WhyUsSection() {
         </div>
       </div>
     </section>
+    <div className='cta-line'>
+          <span><TipsAndUpdatesIcon/>Tired of Slow, Ugly Websites?</span>
+          <a href="#contact">Let's Build you a Better One</a>
+        </div>
+    </>
   );
 }

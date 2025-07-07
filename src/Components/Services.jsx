@@ -95,7 +95,7 @@ const Services = () => {
                 <li key={i}>✔ {point}</li>
               ))}
             </ul>
-            <a href="#">Learn more →</a>
+            <a href="#contact">Get a quote →</a>
           </div>
         ))}
       </div>
@@ -111,7 +111,7 @@ const Services = () => {
                 <li key={i}>✔ {point}</li>
               ))}
             </ul>
-            <a href="#">Learn more →</a>
+            <a href="#contact">Get a quote →</a>
           </div>
         ))}
       </div>
@@ -127,7 +127,7 @@ const Services = () => {
                 <li key={i}>✔ {point}</li>
               ))}
             </ul>
-            <a href="#">Learn more →</a>
+            <a href="#contact">Get a quote →</a>
           </div>
         ))}
       </div>

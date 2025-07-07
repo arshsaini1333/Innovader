@@ -108,12 +108,17 @@
     font-size: 0.9rem;
 }
 
-.service-card a:hover {
-    color: #a78bfa;
-}
-
 .services-section h2 {
     font-size: 3.5rem;
+}
+
+.services-column a {
+    background-color: #7f5af0;
+    color: white;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 
