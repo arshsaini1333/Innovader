@@ -11,6 +11,7 @@ import AquaticAnimals from './Components/Portfolio'
 import ContactForm from './Components/ContactForm'
 import Technologies from './Components/Technologies'
 import StickyFeatureSection from './Components/StickyFeatureSection'
+import Testimonilas from './Components/Testimonilas'
 import Footer from './Components/Footer'
 function App() {
   
@@ -30,6 +31,7 @@ function App() {
       <AquaticAnimals/>
       <Technologies/>
       <StickyFeatureSection/>
+      <Testimonilas/>
       <ContactForm/>
       <Footer/>
     </>

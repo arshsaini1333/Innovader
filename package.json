@@ -18,17 +18,21 @@
     "@mui/icons-material": "^7.2.0",
     "@mui/material": "^7.2.0",
     "@tailwindcss/vite": "^4.1.11",
+    "add": "^2.0.6",
     "gsap": "^3.13.0",
     "heroicons": "^2.2.0",
     "lottie-react": "^2.4.1",
+    "owl.carousel": "^2.3.4",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-icons": "^5.5.0",
+    "react-owl-carousel": "^2.3.3",
     "react-router": "^7.6.3",
     "react-router-dom": "^7.6.3",
     "react-select": "^5.10.1",
     "swiper": "^11.2.10",
-    "tailwindcss": "^4.1.11"
+    "tailwindcss": "^4.1.11",
+    "yarn": "^1.22.22"
   },
   "devDependencies": {
     "@eslint/js": "^9.29.0",
