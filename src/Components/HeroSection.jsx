@@ -39,7 +39,7 @@ export default function HeroSection()
       return () => window.removeEventListener('scroll', handleScroll);
     }, []);
     return(
-        <div className="HeroSection">
+        <div className="HeroSection" id='home'>
         <div className={`hh-headings ${scrolled ? 'scrolled-class' : ''}`}>
           <div className="hhh-sub">Responsive</div>
           <div className="hhh-super">Web Designing</div>

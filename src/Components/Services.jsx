@@ -81,7 +81,7 @@ const Services = () => {
   const col3 = services.slice(4, 6);
 
   return (
-    <section className="services-section">
+    <section className="services-section" id="services">
     <h2>Our Web Development Services</h2>
     <div className="services-columns">
       <div className="services-column column-1">

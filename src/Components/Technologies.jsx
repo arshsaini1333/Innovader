@@ -32,7 +32,7 @@ export default function AutoScrollCards() {
   const duplicatedCards = [...cards, ...cards]; // repeat cards for infinite scroll effect
 
   return (
-    <div className="scroll-container">
+    <div className="scroll-container" id="tech">
         <h1>Technologies <span>we use</span></h1>
       <div className="scroll-track">
         {duplicatedCards.map((card, index) => (

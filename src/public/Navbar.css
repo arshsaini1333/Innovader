@@ -40,10 +40,12 @@
     text-decoration: none;
     color: white;
     transition: color 0.3s ease;
+    font-size: 1.1rem;
+    opacity: 0.8;
 }
 
 .nav-links a:hover {
-    color: #7c80b7;
+    opacity: 1;
 }
 
 .contact-btn {
