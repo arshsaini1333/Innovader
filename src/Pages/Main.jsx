@@ -9,8 +9,7 @@ import HeroSection from '../Components/HeroSection'
 import AquaticAnimals from '../Components/Portfolio'
 import ContactForm from '../Components/ContactForm'
 import Technologies from '../Components/Technologies'
-import StickyFeatureSection from '../Components/StickyFeatureSection'
-
+import WhyUsSection from '../Components/WhyUsSection'
 import Testimonilas from '../Components/Testimonilas'
 import Footer from '../Components/Footer'
 
@@ -31,7 +30,7 @@ export default function Main()
       <Timeline/>
       <AquaticAnimals/>
       <Technologies/>
-      <StickyFeatureSection/>
+      <WhyUsSection/>
       <Testimonilas/>
       <ContactForm/>
       <Footer/>

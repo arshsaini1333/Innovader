@@ -1,14 +1,17 @@
 .why-us-container {
     display: flex;
-    justify-content: space-between;
-    padding: 3rem;
+    gap: 2rem;
+    padding: 2rem;
+    flex-wrap: wrap;
     color: white;
-    background: #000;
 }
 
 .left-static {
-    width: 45%;
-    padding-right: 2rem;
+    flex: 1;
+    min-width: 300px;
+    background-color: #1e1e1e;
+    padding: 1rem;
+    border-radius: 1rem;
 }
 
 .left-static h2 {
@@ -16,32 +19,63 @@
     margin-bottom: 1rem;
 }
 
-.left-static ol li {
-    margin-bottom: 1.5rem;
-    font-size: 1rem;
+.left-static ol {
+    padding-left: 1.2rem;
 }
 
-.left-static li span {
-    color: #b27dff;
+.left-static li {
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.left-static span {
     font-weight: bold;
+    color: #a855f7;
+    font-size: 1.2rem;
 }
 
-.right-animated {
-    width: 50%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    animation: slideUp 2.5s ease-out;
+
+/* Right Animated Scroll */
+
+.feature-right-scroll-container {
+    flex: 1;
+    height: 550px;
+    overflow: hidden;
+    min-width: 300px;
+    position: relative;
 }
+
+.feature-scroll-track {
+    display: flex;
+    flex-direction: column;
+    animation: scroll-up 12s linear infinite;
+}
+
+@keyframes scroll-up {
+    0% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(-50%);
+    }
+}
+
+
+/* Stat card styles */
 
 .stat-card {
-    flex: 1 1 calc(50% - 1rem);
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid #333;
+    padding: 20px;
+    margin: 10px 0;
     border-radius: 12px;
-    padding: 1rem;
+    /* background: rgba(255, 255, 255, 0.03);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); */
     text-align: center;
+    color: white;
     transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .stat-card:hover {
@@ -49,18 +83,20 @@
 }
 
 .stat-icon {
-    font-size: 2rem;
+    font-size: 3.5rem;
+    margin-bottom: 10px;
     color: #b27dff;
-    margin-bottom: 0.5rem;
 }
 
-@keyframes slideUp {
-    0% {
-        transform: translateY(80px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0px);
-        opacity: 1;
-    }
+.stat-card h2 {
+    font-size: 1.8rem;
+    margin: 0.2rem 0;
+}
+
+.stat-card p {
+    font-size: 1rem;
+    color: #ccc;
+    line-height: 1.4;
+    max-width: 80%;
+    margin: 0 auto;
 }
