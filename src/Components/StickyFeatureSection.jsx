@@ -23,14 +23,15 @@ const StickyFeatureSection = () => {
         <p>
           Add CTAs, lead forms, heatmaps & chatbots to capture more leads.
         </p>
-        <h3>Schema Markup Integration</h3>
-<p>Enhance SEO visibility with structured data for rich search results on Google.</p>
+        <h3>Interactive UI with 3D Animations</h3>
+<p>Create immersive experiences using modern 3D effects and smooth animations that engage users.</p>
 
-<h3>Performance Optimization</h3>
-<p>Improve load speed using lazy loading, image compression, and code minification.</p>
+<h3>Dynamic & Responsive Web Design</h3>
+<p>Craft device-friendly websites that adapt seamlessly across all screen sizes and user behaviors.</p>
 
-<h3>Core Web Vitals Compliance</h3>
-<p>Ensure excellent UX and SEO ranking by optimizing LCP, FID, and CLS scores.</p>
+<h3>Database-Driven Functionality</h3>
+<p>Build powerful, data-backed features using robust database integration for real-time performance.</p>
+
       </aside>
 
       {/* Right Column - Cards */}
