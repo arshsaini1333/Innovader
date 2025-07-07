@@ -1,0 +1,66 @@
+.why-us-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+    color: white;
+    background: #000;
+}
+
+.left-static {
+    width: 45%;
+    padding-right: 2rem;
+}
+
+.left-static h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.left-static ol li {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+.left-static li span {
+    color: #b27dff;
+    font-weight: bold;
+}
+
+.right-animated {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    animation: slideUp 2.5s ease-out;
+}
+
+.stat-card {
+    flex: 1 1 calc(50% - 1rem);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-icon {
+    font-size: 2rem;
+    color: #b27dff;
+    margin-bottom: 0.5rem;
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(80px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}

@@ -126,12 +126,13 @@
     background: linear-gradient(90deg, #181818, #181818) padding-box, linear-gradient(to right, #4b4b4b, #111) border-box;
     border: 1px solid transparent;
     border-radius: 999px;
-    padding: 4px;
+    padding: 4px 0;
     width: fit-content;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     margin: 0 auto;
     margin-top: 1rem;
     align-self: center;
+    justify-content: space-between;
 }
 
 .callback-input {
@@ -160,4 +161,106 @@
 
 .callback-button:hover {
     background-color: #7c80b7;
+}
+
+@media screen and (max-width: 1100px) {
+    .hhh-super {
+        font-size: 6rem;
+    }
+    .chrome {
+        top: 20rem;
+        gap: 22rem;
+    }
+    .safari {
+        top: 22rem;
+        gap: 22rem;
+    }
+    .edg {
+        top: 22rem;
+        gap: 15rem;
+    }
+    .scrolled-classsafari {
+        height: 150vh;
+    }
+    .scrolled-classedg {
+        height: 150vh;
+    }
+    .scrolled-classchrome {
+        height: 150vh;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .hhh-super {
+        font-size: 4.5rem;
+        margin-top: 1rem;
+    }
+    .scrolled-classsafari {
+        height: 180vh;
+    }
+    .safari {
+        gap: 15rem;
+    }
+    .hhh-sub {
+        font-size: 2.5rem;
+    }
+    .content div {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .hhh-super {
+        font-size: 2.5rem;
+    }
+    .hhh-sub {
+        font-size: 1.3rem;
+    }
+    .chrome {
+        gap: 15rem;
+        top: 18rem;
+    }
+    .scrolled-classchrome {
+        height: 180vh;
+    }
+    .content div {
+        font-size: 1rem;
+        text-align: center;
+    }
+    .img img {
+        height: 23rem;
+    }
+    .callback-form {
+        width: 100% !important;
+    }
+    .callback-form form {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .callback-button {
+        font-size: 15px;
+    }
+    .callback-input {
+        min-width: 0;
+        /* padding: 0; */
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .chrome {
+        top: 15rem;
+        gap: 15rem;
+    }
+    .scrolled-classchrome {
+        height: 200vh;
+    }
+    .scrolled-classsafari {
+        height: 190vh;
+    }
+    .safari {
+        gap: 15rem;
+        top: 18rem;
+    }
 }
